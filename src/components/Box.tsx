@@ -1,15 +1,18 @@
+import { ReactNode } from "react";
 type PropsType = {
   heading: string;
   count: number;
-//   func1: () => void;
+  children: ReactNode;
+  //   func1: () => void;
 };
 
-function Box({ heading, count}: PropsType) {
-//   func1();
+function Box({ heading, count, children }: PropsType) {
+  //   func1();
   return (
     <div>
       <h1>{heading}</h1>
       <p>{count}</p>
+      {children}
     </div>
   );
 }

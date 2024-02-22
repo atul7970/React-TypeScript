@@ -9,7 +9,9 @@ function App() {
           // func1={() => {
           //   alert("LOL");
           // }}
-        />
+        >
+          {"Wow Nice"}
+        </Box>
       </div>
     </>
   );
