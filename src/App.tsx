@@ -1,17 +1,11 @@
+import { useState } from "react";
 import Box from "./components/Box";
 function App() {
+  const [val, setVal] = useState<string>("");
   return (
     <>
       <div>
-        <Box
-          heading={"Hello World"}
-          count={234}
-          // func1={() => {
-          //   alert("LOL");
-          // }}
-        >
-          {"Wow Nice"}
-        </Box>
+        <Box label="Search" value={val} setter={setVal} />
       </div>
     </>
   );
