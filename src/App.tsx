@@ -70,7 +70,7 @@
 // };
 
 function App() {
-  return <div>Hello</div>;
+  return <div>useReducer Hook</div>;
 }
 
 export default App;
